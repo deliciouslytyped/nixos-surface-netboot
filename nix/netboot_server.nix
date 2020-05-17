@@ -1,3 +1,5 @@
+#TODO fast image generation (dont use squashfs)
+#TODO streamline install process
 {hostAddress, hostSubnetRoot}:
 { lib, config, pkgs, ... }:
 with lib;

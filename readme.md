@@ -5,12 +5,12 @@ connect container interface to physical lan interface, and connect surface to bo
 
 ```
 sudo ip link add name pxebr type bridge
-sudo ip link set brtest up
+sudo ip link set pxebr up
 sudo ip link set eth0 master pxebr
 sudo ip link set ve-ipxesurf master pxebr
 
 sudo env NIX_PATH=nixpkgs=channel:nixos-unstable:"$NIX_PATH" extra-container create ./containers.nix -r
-sudo ip link set ve-ipxesurf master brtest #needs to be rerun every time the container gets reset
+sudo ip link set ve-ipxesurf master pxebr #needs to be rerun every time the container gets reset
 ```
 
 files:

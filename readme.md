@@ -1,3 +1,20 @@
+TODO:
+my device is a surface 3 (non-pro), things that are currently broken:
+- no battery information
+- wifi still fails (under heavy load?) sometimes (havent looked into what happens if I try reloading the kernel module)
+- no backlight
+I haven't run into any other issues yet but I haven't been proactively checking.
+
+What works: (as of the commit this section was introduced in)
+- touch screen
+- audio
+- volume and power button
+- dock
+  - networking (using it for netboot)
+  - charging
+- type cover, backlight, connect / disconnect
+TODO: add model codes
+
 sketch:
 
 Use extra-container to create a container running the services necessary for pxe boot;

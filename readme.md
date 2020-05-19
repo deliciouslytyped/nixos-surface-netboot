@@ -1,3 +1,5 @@
+Netboot functionality is based off https://github.com/cleverca22/nixos-configs/blob/1d6a7de65c1b133f623fd4ce6619c56ef749ffa6/netboot_server.nix
+
 TODO:
 my device is a surface 3 (non-pro), things that are currently broken:
 - no battery information
